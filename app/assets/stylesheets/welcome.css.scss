@@ -1,3 +1,76 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body, .container {
+  @include square;
+}
+
+#bgvid {
+  position: absolute;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -10;
+  background: url(welcome.jpg) no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+.container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .title {
+    display: block;
+    width: 80%;
+    margin: 10% auto;
+    color: rgb(251, 251, 251);
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
+
+    h1 {
+      font-size: 72px;
+      margin-bottom: 42px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20% auto 5%;
+    color: rgb(251, 251, 251);
+  }
+
+  .description {
+    display: block;
+    p {
+      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
+      font-size: 18px;
+      line-height: 16 + 18px;
+    }
+  }
+
+  .controls {
+    width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-container {
+      width: 48px;
+      text-align: center;
+
+      .btn {
+        border: 2px solid #fff;
+        @include square(48px);
+        @include border-radius(25px);
+        margin-bottom: 10px;
+
+        i {
+          line-height: 48px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
