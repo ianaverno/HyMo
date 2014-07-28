@@ -1,41 +1,23 @@
-<div class="cover">
+<section class="welcomeCover">
 
-  <%= video_tag(["welcome.webm", "welcome.mp4", "welcome.ogv"], autoplay: true, loop: true, poster: "welcome.jpg", id: "bgvid", size:"800x450", muted: true) %>
+  <section class="welcomeVideo">
+    <div class="overflow"></div>
+    <%= video_tag(['welcome.webm', 'welcome.mp4', 'welcome.ogv'], autoplay: true, loop: true, poster: 'welcome.jpg', id: 'welcomeVideo', size: '800x450', muted: true) %>
+  </section>
 
-  <!-- <video autoplay loop poster="welcome.jpg" id="bgvid">
-    <source src="videos/welcome.webm" type="video/webm">
-    <source src="videos/welcome.mp4" type="video/mp4">
-    <source src="videos/welcome.3gp" type="video/3gp">
-    Your browser does not support the video tag.
-  </video>
- -->
-
-  <div class="container">
-    <div class="title">
+  <section class="welcomeContent">
+    <header>
       <h1>That's Hybrid Music, fellas!</h1>
       <p>We were bored, so we found a way to make our day a bit more interesting.</p>
-    </div>
+    </header>
 
-    <div class="nav">
-      <div class="description">
-        <p>Introducing the idea of Hybrid Music. For now we have just one video with crazy-wavy industrial<br> ambient and we invite you to download the source and make your version.</p>
+    <footer>
+      <p>Introducing the idea of Hybrid Music. For now we have just one video with crazy-wavy industrial<br> ambient and we invite you to download the source and make your version.</p>
+
+      <div class="btn-mute" id="toggleSound">
+        <i class="fa fa-volume-up"></i>
       </div>
+    </footer>
+  </section>
 
-      <div class="controls">
-        <div class="btn-container">
-          <div class="btn">
-            <i class="fa fa-volume-up"></i>
-          </div>
-          Mute
-        </div>
-        <div class="btn-container">
-          <div class="btn">
-            <i class="fa fa-pause"></i>
-          </div>
-          Pause
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
+</section>

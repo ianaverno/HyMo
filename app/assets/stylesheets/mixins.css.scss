@@ -1,4 +1,11 @@
-@mixin square($size:100%) {
+@mixin square($size: 100%) {
   width: $size;
   height: $size;
+}
+
+@mixin autosize($size: 100%) {
+  min-width: $size;
+  min-height: $size;
+  width: auto;
+  height: auto;
 }
