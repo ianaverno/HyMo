@@ -1,3 +1,9 @@
+/* PT Sans Caption */
+@font-face {font-family: 'PT Sans Caption';
+  src: url('ptc55f_w.eot');
+  src: local('PT Sans Caption'), url('PTC55F_W.woff') format('woff'),url('PTC55F_W.ttf') format('truetype'), url('PTC55F_W.svg#PTSans-Caption') format('svg');}
+/* PT Sans Caption */
+
 /*Awesome*/
 @font-face {
   font-family: 'FontAwesome';

@@ -1,5 +1,4 @@
 <section class="welcomeCover">
-
   <section class="welcomeVideo">
     <div class="overflow"></div>
     <%= video_tag(['welcome.webm', 'welcome.mp4', 'welcome.ogv'], autoplay: true, loop: true, poster: 'welcome.jpg', id: 'welcomeVideo', size: '800x450', muted: true) %>
@@ -19,5 +18,49 @@
       </div>
     </footer>
   </section>
+</section>
 
+<section class="collaborate">
+  <section class="inner-container">
+    <section id="collaborateContent">
+      <h3>Four Easy Steps to Collaborate</h3>
+      <ul class="steps">
+        <li id="step1">
+          <i class="fa fa-download"></i>
+          <h4>Download the Source</h4>
+          <p><a href="#">120 mb wav</a>, <a href="#">320 mb mp4</a></p>
+        </li>
+        <li id="step2">
+          <i class="fa fa-magic"></i>
+          <h4>Add Some Magic</h4>
+          <p>to the sound and/or video</p>
+        </li>
+        <li id="step3">
+          <i class="fa fa-upload"></i>
+          <h4>Upload Your Work</h4>
+          <p>on <a href="https://soundcloud.com">Soundcloud</a> or <a href="https://vimeo.com">Vimeo</a> </p>
+        </li>
+        <li id="step4">
+          <a href="#send-link"><i class="fa fa-link"></i></a>
+          <h4>Provide Us a Link</h4>
+          <p>and credits</p>
+        </li>
+      </ul>
+    </section>
+    <section id="send-link">
+      <!-- a placeholder for form_for -->
+      <form action="">
+        <input type="string" placeholder="Provide Us a Link">
+      </form>
+      <a href="#collaborateContent">Cancel</a>
+      <!-- a placeholder for form_for -->
+    </section>
+  </section>
+</section>
+
+<section class="video">
+  <section class="videoContent">
+    <h2>Introducing the idea of Hybrid</h2>
+    <iframe id="ourVid" src="//player.vimeo.com/video/79830517?title=0&amp;byline=0&amp;portrait=0" width="955" height="537" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </section>
 </section>
