@@ -82,10 +82,11 @@ html, body {
   border-bottom: 1px solid #aaa;
 
   .inner-container {
+    height: 100%;
     width: 200%;
 
     #collaborateContent {
-      @include display-inline-flex;
+      @include display-flex;
       @include flex-direction(column);
       width: 50%;
 
@@ -185,6 +186,8 @@ html, body {
 
 .video {
   @include square;
+  border-bottom: 1px solid #aaa;
+
 
   .videoContent {
     display: block;
@@ -202,6 +205,66 @@ html, body {
     #ourVid {
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+.collection {
+  width: 100%;
+  height: 1000px;
+
+  .collectionContent {
+    display: block;
+    width: 70%;
+    margin: 90px auto;
+
+    h2 {
+      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    .contrib {
+      @include display-flex;
+      @include flex-wrap(wrap);
+      padding: 18px 0;
+      border-bottom: 1px solid #aaa;
+      font-size: 0px;
+
+      aside {
+        height: 100%;
+        width: 234px;
+        margin-right: 34px;
+
+      }
+
+      .description {
+        height: 100%;
+        width: 600px;
+
+        header {
+          margin-bottom:18px;
+
+          h4 {
+            font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          p {
+            line-height: 26px;
+          }
+        }
+
+        p {
+          font-family: "PT Sans Caption", arial, sans-serif;
+          font-size: 13px;
+
+          i {
+            color: grey;
+          }
+        }
+      }
     }
   }
 }
