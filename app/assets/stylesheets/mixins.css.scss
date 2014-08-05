@@ -9,3 +9,18 @@
   width: auto;
   height: auto;
 }
+
+@mixin neue($font-size) {
+	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+	font-size: $font-size;
+}
+
+@mixin neueThin($font-size) {
+	font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-size: $font-size;
+}
+
+@mixin ptc($font-size) {
+	font-family: "PT Sans Caption", arial, sans-serif;
+	font-size: $font-size;
+}

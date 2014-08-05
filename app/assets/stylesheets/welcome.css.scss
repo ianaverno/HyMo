@@ -15,8 +15,9 @@ html, body {
 
   .overflow {
     position: absolute;
-    @include square;
     background-color: rgba(0, 0, 0, 0.6);
+
+    @include square;
   }
 
   video {
@@ -34,16 +35,15 @@ html, body {
   margin: 0 auto;
 
   header {
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
     color: white;
 
     h1 {
       margin-bottom: 42px;
-      font-size: 72px;
+      @include neueThin(72px);
     }
 
     p {
-      font-size: 30px;
+      @include neueThin(30px);
     }
   }
 
@@ -54,8 +54,7 @@ html, body {
     color: white;
 
     p {
-      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
-      font-size: 18px;
+      @include neueThin(18px);
       line-height: 16 + 18px;
     }
 
@@ -79,7 +78,7 @@ html, body {
   height: 460px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid $lineColor;
 
   .inner-container {
     height: 100%;
@@ -93,8 +92,7 @@ html, body {
       h3 {
         margin-top: 120px;
         display: inline-block;
-        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-        font-size: 30px;
+        @include neue(30px);
         width: 100%;
         text-align: center;
       }
@@ -123,17 +121,15 @@ html, body {
           h4 {
             width: 100%;
             text-align: center;
-            font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+            @include neue(16px);
             font-weight: bold;
-            font-size: 16px;
             margin-bottom: 8px;
           }
 
           p {
             width: 100%;
             text-align: center;
-            font-family: "PT Sans Caption", arial, sans-serif;
-            font-size: 12px;
+            @include ptc(12px);
             color: grey;
             // color: rgb(67, 67, 67);
 
@@ -160,8 +156,7 @@ html, body {
           height: 60px;
           line-height: 60px;
           border: 1px solid black;
-          font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-          font-size: 16px;
+          @include neue(16px);
           @include border-radius(7px);
           text-align: center;
 
@@ -175,8 +170,7 @@ html, body {
         display: block;
         margin: 125px auto;
         text-align: center;
-        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-        font-size: 12px;
+        @include neue(12px);
         color: #999;
         text-decoration: none;
       }
@@ -186,7 +180,7 @@ html, body {
 
 .video {
   @include square;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid $lineColor;
 
 
   .videoContent {
@@ -198,8 +192,7 @@ html, body {
       margin-bottom: 50px;
       text-align: center;
       display: block;
-      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
-      font-size: 45px;
+      @include neueThin(45px);
     }
 
     #ourVid {
@@ -219,8 +212,7 @@ html, body {
     margin: 90px auto;
 
     h2 {
-      font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, arial, sans-serif;
-      font-size: 45px;
+      @include neueThin(45px);
       margin-bottom: 40px;
     }
 
@@ -228,7 +220,7 @@ html, body {
       @include display-flex;
       @include flex-wrap(wrap);
       padding: 18px 0;
-      border-bottom: 1px solid #aaa;
+      border-bottom: 1px solid $lineColor;
       font-size: 0px;
 
       aside {
@@ -246,9 +238,8 @@ html, body {
           margin-bottom:18px;
 
           h4 {
-            font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+            @include neue(16px);
             font-weight: bold;
-            font-size: 16px;
           }
 
           p {
@@ -257,8 +248,7 @@ html, body {
         }
 
         p {
-          font-family: "PT Sans Caption", arial, sans-serif;
-          font-size: 13px;
+          @include ptc(13px);
 
           i {
             color: grey;
